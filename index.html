@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Binary Game</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Login Interface -->
+  <div id="login-screen">
+    <h1>Binary Challenge</h1>
+    <div class="login-box">
+      <input type="text" id="username" placeholder="Enter Username">
+      <input type="password" id="password" placeholder="4-Digit Password" maxlength="4">
+      <button id="login-btn">Login</button>
+    </div>
+  </div>
+
+  <!-- Game Interface -->
+  <div id="game-screen" class="hidden">
+    <header>
+      <h1>Binary Challenge</h1>
+      <div class="user-info">
+        <p id="user-points">Points: 0</p>
+        <button id="logout-btn">Logout</button>
+      </div>
+    </header>
+
+    <main>
+      <h2>Choose Game Mode</h2>
+      <button class="game-mode" onclick="startMode('Binary to Decimal')">Binary to Decimal</button>
+      <button class="game-mode" onclick="startMode('Decimal to Binary')">Decimal to Binary</button>
+      <button class="game-mode" onclick="startSpeedChallenge()">Speed Challenge</button>
+
+      <div id="game-area"></div>
+    </main>
+
+    <footer>
+      <p>All Rights Reserved &copy; 2024 CHAPTER-5</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
